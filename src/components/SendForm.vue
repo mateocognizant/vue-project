@@ -32,7 +32,7 @@ export default {
     loadData() {
       let json = { name: this.name, surname: this.surname }
       this.name == "" || this.surname == ""
-        ? alert("no")
+        ? alert("Information is missing")
         : axios
             .post("http://localhost:5000/data", json)
             .then(response => alert("Request succeed"))
